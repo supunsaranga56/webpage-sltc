@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7731281169.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="11.11/logo-work.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span>DATA SCIENCE</span> ENTHUSIASTIC</p>
+                <h1>Hi, I'm <span>Supun</span><br>From Sri lanka</h1>
+            </div>
+        </div>
+    </div>
+    <!-----------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="11.11/my.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Supun Saranga, a 20-year-old data science undergraduate at SLTC Research University. My
+                        journey began at D.S. Senanayake College, where I pursued my A/Ls in the Technology stream,
+                        fueling my passion for technology and innovation. I’m now expanding my expertise in web
+                        development, data science, and computer science. With a strong commitment to problem-solving and
+                        a knack for creating meaningful digital solutions, I aim to bring fresh perspectives to the tech
+                        industry. Let’s connect and explore the limitless possibilities in data and technology!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Music</span><br>Playing Keyboard</li>
+                            <li><span>Coding</span><br>Create softwares</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Keyboard Playing</span><br>Plays Keyboard in weddings,functions and hotels</li>
+                            <li><span>Hacathon</span><br>Attend to Hacathon compitition</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Degree</span><br>undergraduate Bsc. Data Science - SLTC</li>
+                            <li><span>Certification</span><br>Cisco Lab</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Machine Learning Projects</h2>
+                    <p>Machine learning is a branch of artificial intelligence where algorithms learn from data to make
+                        predictions or decisions without explicit programming. By identifying patterns, it powers
+                        applications like recommendation systems, image recognition, and natural language processing.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Big data Analisis</h2>
+                    <p>Big data analysis involves examining vast, complex datasets to uncover hidden patterns,
+                        correlations, and trends. It leverages advanced computational techniques to provide valuable
+                        insights, supporting data-driven decision-making in areas like business, healthcare, finance,
+                        and research.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-list-check"></i>
+                    <h2>Risk management Projects</h2>
+                    <p>Risk management in data science involves identifying, assessing, and mitigating potential risks
+                        in data handling, model bias, and security. By implementing safeguards, monitoring models, and
+                        ensuring ethical practices, data scientists reduce the chance of errors and protect data
+                        integrity.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------portfolio------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="11.11/work1.png">
+                    <div class="layer">
+                        <h3>Machine Learning Projects</h3>
+                        <p>I do ML projects, like image proccesing</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="11.11/work2.png">
+                    <div class="layer">
+                        <h3>Big Data Analisis</h3>
+                        <p>I do data analysis projects</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="11.11/work3.png">
+                    <div class="layer">
+                        <h3>Risk management Projects</h3>
+                        <p>I do risk management project, using statistic and propability</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+
+    </div>
+
+    <!-----------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>Sarangasupun56@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i>071-2660303</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="11.11/Personal Portfolio Website.pdf" download class="btn btn2">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Supun. Made with <i class="fa-solid fa-heart"></i> My self</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx63Xs7X8kZCQOMdiMC_8rEDhIpPb_CQ2gsGDekIskvZsx1AuMg6YQ8KMJ2WBOUrjv_5w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully !"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
